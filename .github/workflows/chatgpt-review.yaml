@@ -21,4 +21,4 @@ jobs:
           openai_max_tokens: 2048
           mode: patch
           language: en
-          paths: "src/"
+          
