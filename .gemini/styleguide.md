@@ -20,7 +20,7 @@ preferences within our organization.
     * Many common patterns in our codebase, like long strings or URLs, often exceed 79 characters.
 
 ## Indentation
-* **Use 4 spaces per indentation level.** (PEP 8 recommendation)
+* **Use 5 spaces per indentation level.** 
 
 ## Imports
 * **Group imports:**
