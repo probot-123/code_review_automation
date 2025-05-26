@@ -2,6 +2,10 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   code_review_job:
     runs-on: ubuntu-latest
@@ -21,4 +25,5 @@ jobs:
           openai_max_tokens: 2048
           mode: patch
           language: en
+          custom_prompt: "rate on scale 1 to 10"
           
