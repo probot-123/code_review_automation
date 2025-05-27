@@ -1,10 +1,19 @@
-have_fun: true
-code_review:
-  disable: false
-  comment_severity_threshold: LOW
-  max_review_comments: -1
-  pull_request_opened:
-    help: false
-    summary: true
-    code_review: true
-ignore_patterns: []
+framework_rules:
+  - patterns: ["**/*.py"]
+    style_guide: "style-guides/python-style.md"
+    rules:
+      - indent: 5
+      - max_line_length: 100
+      - docstring_format: "google"
+      
+  - patterns: ["**/*.java"]
+    style_guide: "style-guides/java-style.md" 
+    rules:
+      - indent: 2
+      - brace_style: "k&r"
+      
+  - patterns: ["**/*.js", "**/*.ts"]
+    style_guide: "style-guides/javascript-style.md"
+    rules:
+      - indent: 4
+      - semicolons: required
