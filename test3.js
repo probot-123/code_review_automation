@@ -15,4 +15,4 @@ function Account(accountName, country, businessName) {
 const account = new Account("Yash Enterprises", "India", "Tech Solutions");
 
 // Display account details
-account.displayInfo();
+account.displayInfo()
